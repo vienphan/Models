@@ -1,0 +1,108 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sales Analysis - Monthly & Yearly with YoY Variance</title>
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 40px;
+                background-color: #f5f5f5;
+            }
+            .container {
+                max-width: 1600px;
+                margin: 0 auto;
+                background-color: white;
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            }
+            h1 {
+                color: #2c3e50;
+                border-bottom: 3px solid #3498db;
+                padding-bottom: 10px;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+            h2 {
+                color: #34495e;
+                margin-top: 40px;
+                margin-bottom: 20px;
+                padding-bottom: 8px;
+                border-bottom: 2px solid #95a5a6;
+            }
+            .description {
+                color: #7f8c8d;
+                margin-bottom: 20px;
+                font-size: 14px;
+                text-align: center;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+                margin-bottom: 40px;
+                font-size: 13px;
+            }
+            th {
+                background-color: #3498db;
+                color: white;
+                padding: 12px;
+                text-align: right;
+                font-weight: 600;
+                position: sticky;
+                top: 0;
+                z-index: 10;
+            }
+            th:first-child {
+                text-align: left;
+            }
+            td {
+                padding: 10px 12px;
+                border-bottom: 1px solid #ecf0f1;
+                text-align: right;
+            }
+            td:first-child {
+                text-align: left;
+                font-weight: 600;
+                color: #2c3e50;
+            }
+            tr:hover {
+                background-color: #f8f9fa;
+            }
+            .total-row {
+                background-color: #e8f4f8;
+                font-weight: bold;
+                border-top: 2px solid #3498db;
+            }
+            .positive {
+                color: #27ae60;
+            }
+            .negative {
+                color: #e74c3c;
+            }
+            .timestamp {
+                text-align: center;
+                color: #95a5a6;
+                margin-top: 30px;
+                font-size: 12px;
+            }
+            .section-break {
+                height: 2px;
+                background: linear-gradient(to right, #3498db, #2ecc71);
+                margin: 50px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Sales Analysis - Monthly & Yearly with YoY Variance</h1>
+            <div class="description">Comprehensive monthly and yearly sales analysis with year-over-year variance. All values in VND (whole numbers).</div>
+            
+            <h2>📅 Monthly Sales Analysis</h2>
+    <table><tr><th>Month</th><th>2023</th><th>2024</th><th>2025</th><th>2026</th><th>2024 vs 2023 ($)</th><th>2024 vs 2023 (%)</th><th>2025 vs 2024 ($)</th><th>2025 vs 2024 (%)</th><th>2026 vs 2025 ($)</th><th>2026 vs 2025 (%)</th></tr><tr class=""><td>Jan</td><td>107,391,613</td><td>81,653,168</td><td>81,966,508</td><td>85,009,493</td><td class="negative">-25,738,446</td><td class="negative">-23.97%</td><td class="positive">313,340</td><td class="positive">0.38%</td><td class="positive">3,042,985</td><td class="positive">3.71%</td></tr><tr class=""><td>Feb</td><td>76,027,670</td><td>61,453,866</td><td>47,788,656</td><td>57,941,811</td><td class="negative">-14,573,804</td><td class="negative">-19.17%</td><td class="negative">-13,665,211</td><td class="negative">-22.24%</td><td class="positive">10,153,155</td><td class="positive">21.25%</td></tr><tr class=""><td>Mar</td><td>68,589,384</td><td>59,390,355</td><td>53,603,531</td><td>57,075,659</td><td class="negative">-9,199,029</td><td class="negative">-13.41%</td><td class="negative">-5,786,824</td><td class="negative">-9.74%</td><td class="positive">3,472,128</td><td class="positive">6.48%</td></tr><tr class=""><td>Apr</td><td>88,720,609</td><td>76,844,094</td><td>58,522,285</td><td>72,892,884</td><td class="negative">-11,876,515</td><td class="negative">-13.39%</td><td class="negative">-18,321,809</td><td class="negative">-23.84%</td><td class="positive">14,370,599</td><td class="positive">24.56%</td></tr><tr class=""><td>May</td><td>86,806,891</td><td>71,181,114</td><td>59,562,206</td><td>73,219,813</td><td class="negative">-15,625,777</td><td class="negative">-18.00%</td><td class="negative">-11,618,908</td><td class="negative">-16.32%</td><td class="positive">13,657,608</td><td class="positive">22.93%</td></tr><tr class=""><td>Jun</td><td>68,652,210</td><td>62,650,455</td><td>55,310,368</td><td>62,746,713</td><td class="negative">-6,001,755</td><td class="negative">-8.74%</td><td class="negative">-7,340,087</td><td class="negative">-11.72%</td><td class="positive">7,436,344</td><td class="positive">13.44%</td></tr><tr class=""><td>Jul</td><td>68,651,502</td><td>58,678,033</td><td>57,157,666</td><td>64,240,214</td><td class="negative">-9,973,469</td><td class="negative">-14.53%</td><td class="negative">-1,520,367</td><td class="negative">-2.59%</td><td class="positive">7,082,548</td><td class="positive">12.39%</td></tr><tr class=""><td>Aug</td><td>70,236,638</td><td>58,366,399</td><td>63,205,308</td><td>69,154,427</td><td class="negative">-11,870,239</td><td class="negative">-16.90%</td><td class="positive">4,838,910</td><td class="positive">8.29%</td><td class="positive">5,949,119</td><td class="positive">9.41%</td></tr><tr class=""><td>Sep</td><td>72,633,935</td><td>59,576,590</td><td>55,971,033</td><td>66,210,523</td><td class="negative">-13,057,345</td><td class="negative">-17.98%</td><td class="negative">-3,605,557</td><td class="negative">-6.05%</td><td class="positive">10,239,490</td><td class="positive">18.29%</td></tr><tr class=""><td>Oct</td><td>77,684,466</td><td>57,348,584</td><td>59,047,075</td><td>72,160,324</td><td class="negative">-20,335,881</td><td class="negative">-26.18%</td><td class="positive">1,698,491</td><td class="positive">2.96%</td><td class="positive">13,113,249</td><td class="positive">22.21%</td></tr><tr class=""><td>Nov</td><td>69,667,269</td><td>60,429,441</td><td>61,640,436</td><td>71,487,864</td><td class="negative">-9,237,828</td><td class="negative">-13.26%</td><td class="positive">1,210,995</td><td class="positive">2.00%</td><td class="positive">9,847,428</td><td class="positive">15.98%</td></tr><tr class=""><td>Dec</td><td>76,539,569</td><td>73,710,317</td><td>76,859,022</td><td>83,586,268</td><td class="negative">-2,829,252</td><td class="negative">-3.70%</td><td class="positive">3,148,706</td><td class="positive">4.27%</td><td class="positive">6,727,245</td><td class="positive">8.75%</td></tr><tr class="total-row"><td>TOTAL</td><td>931,601,757</td><td>781,282,416</td><td>730,634,093</td><td>835,725,992</td><td class="negative">-150,319,341</td><td class="negative">-16.14%</td><td class="negative">-50,648,323</td><td class="negative">-6.48%</td><td class="positive">105,091,899</td><td class="positive">14.38%</td></tr></table><div class="section-break"></div><h2>📊 Yearly Sales Analysis</h2><table><tr><th>Year</th><th>Total Sales</th><th>Days</th><th>Avg Daily Sales</th><th>YoY Variance ($)</th><th>YoY Variance (%)</th></tr><tr><td>2,023</td><td>931,601,757</td><td>364</td><td>2,559,345</td><td>nan</td><td>nan</td></tr><tr><td>2,024</td><td>781,282,416</td><td>365</td><td>2,140,500</td><td class="negative">-150,319,341</td><td class="negative">-16.14%</td></tr><tr><td>2,025</td><td>730,634,093</td><td>364</td><td>2,007,237</td><td class="negative">-50,648,323</td><td class="negative">-6.48%</td></tr><tr><td>2,026</td><td>835,725,992</td><td>365</td><td>2,289,660</td><td class="positive">105,091,899</td><td class="positive">14.38%</td></tr></table><div class="timestamp">Generated on 2026-02-08 16:10:09</div>
+        </div>
+    </body>
+    </html>
+    
